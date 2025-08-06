@@ -13,10 +13,10 @@ import {
 import {
   CONTENT_OVERVIEW,
   CONTENT_TREN_OF_TWEET,
-  CONTENT_SENTIMENT_ANALYST,
-  CONTENT_EMOTION_ANALYSIS,
-  CONTENT_BUZZER,
-  CONTENT_COMMUNITY,
+  // CONTENT_SENTIMENT_ANALYST,
+  // CONTENT_EMOTION_ANALYSIS,
+  // CONTENT_BUZZER,
+  // CONTENT_COMMUNITY,
   CONTENT_CHAT_BOT,
 } from "@/types/constantLabelSidebar";
 import { useAnalysis } from "@/hooks/AnalysisContext";
@@ -58,22 +58,22 @@ const Sidebar: React.FC = () => {
             active: active === CONTENT_TREN_OF_TWEET,
             onClick: () => handleItemClick(CONTENT_TREN_OF_TWEET),
           },
-          {
-            label: CONTENT_SENTIMENT_ANALYST,
-            icon: <Smile />,
-            active: active === CONTENT_SENTIMENT_ANALYST,
-            onClick: () => handleItemClick(CONTENT_SENTIMENT_ANALYST),
-          },
-          {
-            label: CONTENT_EMOTION_ANALYSIS,
-            icon: <MessageCircle />,
-            active: active === CONTENT_EMOTION_ANALYSIS,
-            onClick: () => handleItemClick(CONTENT_EMOTION_ANALYSIS),
-          },
+          // {
+          //   label: CONTENT_SENTIMENT_ANALYST,
+          //   icon: <Smile />,
+          //   active: active === CONTENT_SENTIMENT_ANALYST,
+          //   onClick: () => handleItemClick(CONTENT_SENTIMENT_ANALYST),
+          // },
+          // {
+          //   label: CONTENT_EMOTION_ANALYSIS,
+          //   icon: <MessageCircle />,
+          //   active: active === CONTENT_EMOTION_ANALYSIS,
+          //   onClick: () => handleItemClick(CONTENT_EMOTION_ANALYSIS),
+          // },
         ]}
       />
       <div className="self-stretch border border-gray-200"></div>
-      <SidebarSection
+      {/* <SidebarSection
         title="Social Network Analysis"
         items={[
           {
@@ -89,7 +89,7 @@ const Sidebar: React.FC = () => {
             onClick: () => handleItemClick(CONTENT_COMMUNITY),
           },
         ]}
-      />
+      /> */}
       <div className="self-stretch border border-gray-200"></div>
       <SidebarSection
         items={[

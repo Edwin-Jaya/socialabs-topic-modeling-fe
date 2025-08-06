@@ -21,7 +21,10 @@ axiosPrivate.interceptors.request.use(
 );
 
 let isRefreshing = false;
-let failedQueue: { resolve: (token: any) => void; reject: (error: any) => void }[] = [];
+let failedQueue: {
+  resolve: (token: any) => void;
+  reject: (error: any) => void;
+}[] = [];
 
 const processQueue = (error: any, token = null) => {
   failedQueue.forEach((prom) => {
@@ -62,11 +65,15 @@ axiosPrivate.interceptors.response.use(
 
       try {
         const refreshToken = cookies.get("refreshToken");
-        const response = await axios.post(`${API}/account/auth/generate-token`, { refreshToken });
+        const response = await axios.post(
+          `${API}/account/auth/generate-token`,
+          { refreshToken }
+        );
         const { accessToken } = response.data;
 
         cookies.set("accessToken", accessToken);
-        axiosPrivate.defaults.headers["Authorization"] = `Bearer ${accessToken}`;
+        axiosPrivate.defaults.headers["Authorization"] =
+          `Bearer ${accessToken}`;
         // axiosPrivate.defaults.headers["Ocp-Apim-Subscription-Key"] = KEY;
         processQueue(null, accessToken);
         isRefreshing = false;
@@ -97,4 +104,4 @@ axiosPublic.interceptors.request.use(
   }
 );
 
-export {  axiosPrivate, axiosPublic };
+export { axiosPrivate, axiosPublic };

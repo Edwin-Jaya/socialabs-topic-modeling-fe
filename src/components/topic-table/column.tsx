@@ -18,22 +18,47 @@ export const columns: ColumnDef<Project>[] = [
     },
   },
   {
-    accessorKey: "start_date_crawl",
-    header: () => <div className="w-72">Timeframe</div>,
+    accessorKey: "description",
+    header: () => <div className="w-72">Description</div>,
     cell: ({ row }) => {
-      const start_date_crawl = row.original.start_date_crawl
-        ? format(row.original.start_date_crawl, "dd MMMM yyyy")
-        : "";
-      const end_date_crawl = row.original.end_date_crawl
-        ? format(row.original.end_date_crawl, "dd MMMM yyyy")
-        : "";
-      return (
-        <div className="text-sm text-foreground">
-          {start_date_crawl} - {end_date_crawl}
-        </div>
-      );
+      const description = row.original.description;
+      return <div className="text-sm text-foreground">{description}</div>;
     },
   },
+  // {
+  //   accessorKey: "start_date_crawl",
+  //   header: () => <div className="w-72">Timeframe</div>,
+  //   cell: ({ row }) => {
+  //     const start_date_crawl = row.original.start_date_crawl
+  //       ? format(row.original.start_date_crawl, "dd MMMM yyyy")
+  //       : "";
+  //     const end_date_crawl = row.original.end_date_crawl
+  //       ? format(row.original.end_date_crawl, "dd MMMM yyyy")
+  //       : "";
+  //     return (
+  //       <div className="text-sm text-foreground">
+  //         {start_date_crawl} - {end_date_crawl}
+  //       </div>
+  //     );
+  //   },
+  // },
+  // {
+  //   accessorKey: "start_date_crawl",
+  //   header: () => <div className="w-72">Timeframe</div>,
+  //   cell: ({ row }) => {
+  //     const start_date_crawl = row.original.start_date_crawl
+  //       ? format(row.original.start_date_crawl, "dd MMMM yyyy")
+  //       : "";
+  //     const end_date_crawl = row.original.end_date_crawl
+  //       ? format(row.original.end_date_crawl, "dd MMMM yyyy")
+  //       : "";
+  //     return (
+  //       <div className="text-sm text-foreground">
+  //         {start_date_crawl} - {end_date_crawl}
+  //       </div>
+  //     );
+  //   },
+  // },
   {
     accessorKey: "keyword",
     header: "Keyword",
