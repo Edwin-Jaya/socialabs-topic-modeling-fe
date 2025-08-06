@@ -6,7 +6,7 @@ import {
   useEffect,
 } from "react";
 import { axiosPrivate, axiosPublic } from "@/axiosConfig";
-import { OfflineDataProvider } from "@/types/DummyData";
+import { OfflineDataProvider } from "@/types/DummyData1";
 import { useAuth } from "./AuthContext";
 
 import {

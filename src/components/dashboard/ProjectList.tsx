@@ -10,7 +10,7 @@ import { useAnalysis } from "@/hooks/AnalysisContext";
 import { API } from "@/lib/urls";
 import Project from "@/types/Project";
 import { useAuth } from "@/hooks/AuthContext";
-import { OfflineDataProvider } from "@/types/DummyData";
+import { OfflineDataProvider } from "@/types/DummyData1";
 
 const ProjectList = () => {
   const { getProjects } = useAnalysis();

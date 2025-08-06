@@ -69,7 +69,7 @@ const Navbar: React.FC = () => {
       {/* Logo dan Nama Aplikasi */}
       <div className="flex items-center space-x-2 p-3 border border-gray-200 rounded-md">
         <Logo />
-        <span className="text-xl font-bold">SociaTrack</span>
+        <span className="text-xl font-bold">SociaLabs</span>
       </div>
 
       {/* Menu Navigasi */}
