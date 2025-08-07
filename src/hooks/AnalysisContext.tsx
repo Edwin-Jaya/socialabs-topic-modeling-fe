@@ -271,33 +271,73 @@ export const AnalysisProvider = ({ children }: AnalysisProviderProps) => {
 
   const getTweetTopic = async () => {
     try {
+      console.log('Debug - selectedProject:', selectedProject);
+      console.log('Debug - selectedTopic:', selectedTopic);
+      console.log('Debug - isOfflineMode:', auth?.isOfflineMode);
+      
       if (auth?.isOfflineMode && selectedProject) {
-        const tweets = OfflineDataProvider.getTweetsByProject(
+        // Get all tweets for the project first
+        let tweets = OfflineDataProvider.getTweetsByProject(
           selectedProject._id
         );
+
+        tweets = tweets.filter(tweet => 
+          tweet.projectId.toString() === selectedProject._id
+        );
+        
+        // Then filter by topic if needed
+        if (selectedTopic !== "all") {
+          tweets = tweets.filter(tweet => 
+            tweet.topicId.toString() === selectedTopic
+          );
+        }
+        
+        console.log('Debug - Offline filtered tweets:', tweets);
         setTweetsTopic(tweets);
         return;
       }
-
+      
       let url = `${API}/topic/document-by-project/${selectedProject?._id}`;
-
-      if (selectedTopic != "all") {
+      
+      if (selectedTopic !== "all") {
         url += `?topic=${selectedTopic}`;
       }
-
+      
+      console.log('Debug - API URL:', url);
+      
       const response = await axiosPublic.get(url);
-      setTweetsTopic(response.data.data);
+      console.log('Debug - API Response:', response.data);
+      
+      if (response.data && response.data.data) {
+        setTweetsTopic(response.data.data);
+      } else {
+        console.warn('No data found in API response');
+        setTweetsTopic([]);
+      }
+      
     } catch (error) {
+      console.error('Error in getTweetTopic:', error);
+      
       if (auth?.isOfflineMode && selectedProject) {
-        const tweets = OfflineDataProvider.getTweetsByProject(
+        // Fallback to offline data with topic filtering
+        let tweets = OfflineDataProvider.getTweetsByProject(
           selectedProject._id
         );
+        
+        if (selectedTopic !== "all") {
+          tweets = tweets.filter(tweet => 
+            tweet.topicId.toString() === selectedTopic
+          );
+        }
+        
         setTweetsTopic(tweets);
       } else {
-        console.error(error);
+        // Set empty array if all fails
+        setTweetsTopic([]);
       }
     }
   };
+  
 
   const getSentiment = async () => {
     try {

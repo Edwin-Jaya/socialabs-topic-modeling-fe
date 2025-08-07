@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "dummy-project-001",
+    "title": "Analisis Dinamika Opini Publik terhadap Penyakit Diabetes",
+    "description": "Analysis of social entrepreneurship discussions, impact investing trends, and social innovation initiatives across Indonesian social media platforms.",
+    "topic_category": "Penyakit Diabetes",
+    "start_date_crawl": "2025-01-01",
+    "end_date_crawl": "2025-01-31",
+    "keyword": "Penyakit Diabetes",
+    "language": "id"
+  },
+  {
+    "_id": "dummy-project-002",
+    "title": "Analisis Opini Publik terhadap Ny Liem",
+    "description": "Comprehensive analysis of CSR initiatives, sustainable business practices, and corporate impact discussions in the business community.",
+    "topic_category": "corporate social responsibility",
+    "start_date_crawl": "2025-02-01",
+    "end_date_crawl": "2025-02-29",
+    "keyword": "toko dan bahan kue ny.liem",
+    "language": "id"
+  },
+  {
+    "_id": "dummy-project-004",
+    "title": "Analisis Opini Publik terhadap Tren Euro Truck Simulator 2",
+    "description": "Analisis Opini Publik terhadap Tren Euro Truck Simulator 2",
+    "topic_category": "Tren Euro Truck Simulator 2",
+    "start_date_crawl": "2025-01-01",
+    "end_date_crawl": "2025-01-31",
+    "keyword": "Tren Euro Truck Simulator 2",
+    "language": "id"
+  },
+  {
+    "_id": "dummy-project-005",
+    "title": "Analisis Opini Publik terhadap Bolu Ketan Hitam",
+    "description": "Analisis Opini Publik terhadap Bolu Ketan Hitam",
+    "topic_category": "Bolu Ketan Hitam",
+    "start_date_crawl": "2025-02-01",
+    "end_date_crawl": "2025-02-29",
+    "keyword": "Bolu Ketan Hitam",
+    "language": "id"
+  },
+  {
+    "_id": "dummy-project-006",
+    "title": "Analisis Opini Publik terhadap Kopi Tuku vs Fore Coffee",
+    "description": "Analisis Opini Publik terhadap Kopi Tuku vs Fore Coffee",
+    "topic_category": "sustainable development",
+    "start_date_crawl": "2025-03-01",
+    "end_date_crawl": "2025-03-31",
+    "keyword": "Kopi Tuku vs Fore Coffee",
+    "language": "id"
+  },
+  {
+    "_id": "dummy-project-007",
+    "title": "Analisa Pandangan Publik Terhadap RUU TNI",
+    "description": "Analisa Pandangan Publik Terhadap RUU TNI di Indonesia",
+    "topic_category": "Politics",
+    "start_date_crawl": "2025-06-01",
+    "end_date_crawl": "2025-06-30",
+    "keyword": "RUU TNI",
+    "language": "id"
+  }
+]

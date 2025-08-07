@@ -5,307 +5,27 @@ import { Emotion, TEmotion } from "./Emotion";
 import { Buzzer } from "./Buzzer";
 import { Community } from "./Community";
 import { ChatbotPromptTopics, ChatbotMessage } from "./Chatbot";
+import tweetTopicsData from '../data/tweet-topics.json';
+import TopicsData from '../data/topics.json';
+import projectsData from '../data/projects.json';
 
 // Dummy Projects - Social Business Context
-export const DUMMY_PROJECTS: Project[] = [
-  // NANTI COPY DARI SINI BANG EDWIN
-  {
-    _id: "dummy-project-004",
-    title: "Analisis Opini Publik terhadap Tren Euro Truck Simulator 2",
-    description: "Analisis Opini Publik terhadap Tren Euro Truck Simulator 2",
-    topic_category: "social entrepreneurship",
-    start_date_crawl: "2025-01-01",
-    end_date_crawl: "2025-01-31",
-    keyword: "social entrepreneurship",
-    language: "id",
-  },
-  {
-    _id: "dummy-project-005",
-    title: "Analisis Opini Publik terhadap Bolu Ketan Hitam",
-    description: "Analisis Opini Publik terhadap Bolu Ketan Hitam",
-    topic_category: "corporate social responsibility",
-    start_date_crawl: "2025-02-01",
-    end_date_crawl: "2025-02-29",
-    keyword: "corporate social",
-    language: "id",
-  },
-  {
-    _id: "dummy-project-006",
-    title: "Analisis Opini Publik terhadap Kopi Tuku vs Fore Coffee",
-    description: "Analisis Opini Publik terhadap Kopi Tuku vs Fore Coffee",
-    topic_category: "sustainable development",
-    start_date_crawl: "2025-03-01",
-    end_date_crawl: "2025-03-31",
-    keyword: "sustainable development",
-    language: "id",
-  },
-  // SAMPE SINI
-];
+export const DUMMY_PROJECTS: Project[] = projectsData;
 
 // Dummy Topics - Social Business Context
-export const DUMMY_TOPICS: Topic[] = [
-  {
-    context:
-      "Topik ini tentang game Euro Truck Simulator yang menghadirkan truk spesial bork dan tanker Corsa dalam project baru, sehingga penggemar dapat mengunduh konten menarik dan merasakan sensasi menjadi sopir virtual.",
-    keyword: "truk spesial OR tanker Corsa OR Euro Truck Simulator",
-    projectId: "dummy-project-004",
-    topicId: 1,
-    words: [
-      "bork",
-      "sopir",
-      "game",
-      "tanker",
-      "project",
-      "spesial",
-      "hadir",
-      "unduh",
-      "corsa",
-      "truk",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang mod CEST dan Metropolix di Euro Truck Simulator yang menghadirkan trailer minyak spesial dengan detail tinggi, menciptakan pengalaman berkendara alami yang banyak diunggah dan disaksikan di YouTube.",
-    keyword: "mod CEST OR mod Metropolix",
-    projectId: "dummy-project-004",
-    topicId: 2,
-    words: [
-      "cest",
-      "metropolix",
-      "kendara",
-      "alami",
-      "youtube",
-      "spesial",
-      "tinggi",
-      "unggah",
-      "minyak",
-      "saksi",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang episode terbaru Euro Truck Simulator yang memperkenalkan wilayah Actros dan truk bork, di mana pemain bergabung untuk merasakan kendara alami yang sungguh menantang, bahkan menghadapi celaka di tengah perjalanan waktu.",
-    keyword: "Wilayah Actros OR truk bork",
-    projectId: "dummy-project-004",
-    topicId: 3,
-    words: [
-      "episode",
-      "wilayah",
-      "actros",
-      "gabung",
-      "sungguh",
-      "bork",
-      "celaka",
-      "kendara",
-      "alami",
-      "waktu",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang pengembangan mod Metropolix di Euro Truck Simulator yang melibatkan usaha penuh inovasi, menambahkan bus, trailer farming, dan manajemen waktu luang yang mudah dikendalikan dengan mouse, disaksikan banyak pemain.",
-    keyword: "mod Metropolix OR inovasi OR farming",
-    projectId: "dummy-project-004",
-    topicId: 4,
-    words: [
-      "usaha",
-      "mouse",
-      "metropolix",
-      "penuh",
-      "bus",
-      "saksi",
-      "luang",
-      "farming",
-      "trailer",
-      "man",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang semangat komunitas Euro Truck Simulator dalam memilih truk TGX sebagai setir andalan, membahas harga mod tani, membagikan asa sukses, dan berbagi pengalaman di YouTube.",
-    keyword: "truk TGX OR mod tani OR sukses",
-    projectId: "dummy-project-004",
-    topicId: 5,
-    words: [
-      "asa",
-      "harga",
-      "semangat",
-      "setir",
-      "tani",
-      "youtube",
-      "pilih",
-      "game",
-      "euro",
-      "tgx",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang bolu ketan hitam keju lumer yang lezat, dijual mulai dari Rp10.000 per sentimeter dan siap kirim ke seluruh Indonesia.",
-    keyword: "bolu ketan hitam OR keju lumer",
-    projectId: "dummy-project-005",
-    topicId: 6,
-    words: [
-      "bolu",
-      "ketan",
-      "hitam",
-      "keju",
-      "lumer",
-      "rupiah",
-      "kirim",
-      "jual",
-      "lezat",
-      "sentimeter",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang resep ayam bumbu lezat dengan telur dan nasi hitam, bahan sederhana yang bisa dicoba untuk makan praktis sehari-hari.",
-    keyword: "resep ayam bumbu OR telur OR nasi hitam",
-    projectId: "dummy-project-005",
-    topicId: 7,
-    words: [
-      "ayam",
-      "bumbu",
-      "lezat",
-      "telur",
-      "makan",
-      "bahan",
-      "coba",
-      "nasi",
-      "hitam",
-      "resep",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang perbandingan rasa kopi Tuku dan Fore Coffee yang nikmat dan manis dengan tambahan susu, sekaligus membahas harga dalam rupiah bagi yang ingin coba minum.",
-    keyword: "kopi Tuku OR kopi Fore Coffee",
-    projectId: "dummy-project-006",
-    topicId: 8,
-    words: [
-      "kopi",
-      "coffee",
-      "fore",
-      "nikmat",
-      "minum",
-      "manis",
-      "susu",
-      "harga",
-      "rupiah",
-      "coba",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang perbandingan harga kopi Tuku dan Fore Coffee dalam rupiah, serta pengalaman coba minum kopi manis yang nikmat dengan sentuhan susu.",
-    keyword: "kopi Tuku OR kopi Fore Coffee",
-    projectId: "dummy-project-006",
-    topicId: 9,
-    words: [
-      "kopi",
-      "coffee",
-      "fore",
-      "nikmat",
-      "minum",
-      "manis",
-      "susu",
-      "harga",
-      "rupiah",
-      "coba",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang rekomendasi untuk coba minum kopi Tuku versus Fore Coffee yang nikmat, manis, dan creamy berkat susu, dengan perbandingan harga rupiah yang terjangkau.",
-    keyword: "kopi Tuku OR kopi Fore Coffee",
-    projectId: "dummy-project-006",
-    topicId: 10,
-    words: [
-      "kopi",
-      "coffee",
-      "fore",
-      "nikmat",
-      "minum",
-      "manis",
-      "susu",
-      "harga",
-      "rupiah",
-      "coba",
-    ],
-  },
-  {
-    context:
-      "Topik ini tentang ulasan kopi Tuku dan Fore Coffee: rasa nikmat, paduan manis dan susu, serta perbedaan harga dalam rupiah untuk dicoba saat nongkrong dan minum coffee.",
-    keyword: "kopi Tuku OR kopi Fore Coffee",
-    projectId: "dummy-project-006",
-    topicId: 11,
-    words: [
-      "kopi",
-      "coffee",
-      "fore",
-      "nikmat",
-      "minum",
-      "manis",
-      "susu",
-      "harga",
-      "rupiah",
-      "coba",
-    ],
-  },
-];
+export const DUMMY_TOPICS: Topic[] = TopicsData;
 
 // Dummy Tweet Topics - Social Business Context
-export const DUMMY_TWEET_TOPICS: TweetTopic[] = [
-  {
-    full_text:
-      "Social entrepreneurship is revolutionizing how we solve societal problems. The rise of impact-driven businesses shows that profit and purpose can coexist beautifully. #SocialEntrepreneurship #ImpactBusiness",
-    tweet_url: "https://twitter.com/user1/status/1234567890",
-    username: "impact_pioneer",
-  },
-  {
-    full_text:
-      "Just attended an amazing panel on impact investing! The potential for capital to drive positive social change while generating returns is truly inspiring. The future of finance is purpose-driven. #ImpactInvesting",
-    tweet_url: "https://twitter.com/user2/status/1234567891",
-    username: "sustainable_investor",
-  },
-  {
-    full_text:
-      "Corporate Social Responsibility isn't just about charity anymore - it's about embedding social and environmental impact into core business strategy. ESG metrics are becoming the new bottom line. #CSR #ESG",
-    tweet_url: "https://twitter.com/user3/status/1234567892",
-    username: "csr_advocate",
-  },
-  {
-    full_text:
-      "The SDGs provide a roadmap for businesses to create meaningful impact. Companies that align with sustainable development goals are not just doing good - they're building resilient, future-ready organizations.",
-    tweet_url: "https://twitter.com/user4/status/1234567893",
-    username: "sdg_champion",
-  },
-  {
-    full_text:
-      "B Corporations are proving that business can be a force for good. The B Corp movement is creating a new paradigm where success is measured by positive impact on all stakeholders, not just shareholders.",
-    tweet_url: "https://twitter.com/user5/status/1234567894",
-    username: "bcorp_leader",
-  },
-  {
-    full_text:
-      "Social innovation labs are becoming crucial for addressing complex societal challenges. These collaborative spaces bring together entrepreneurs, investors, and communities to co-create solutions.",
-    tweet_url: "https://twitter.com/user6/status/1234567895",
-    username: "innovation_hub",
-  },
-  {
-    full_text:
-      "The rise of social impact bonds shows how innovative financing can tackle social problems. When investors get returns based on social outcomes, everyone wins - investors, communities, and society.",
-    tweet_url: "https://twitter.com/user7/status/1234567896",
-    username: "social_finance_expert",
-  },
-  {
-    full_text:
-      "Microfinance and inclusive business models are empowering millions of people to escape poverty. Financial inclusion is not just about access - it's about creating pathways to prosperity.",
-    tweet_url: "https://twitter.com/user8/status/1234567897",
-    username: "financial_inclusion",
-  },
-];
+// export const DUMMY_TWEET_TOPICS: TweetTopic[] = [
+//   {
+//     full_text:
+//       "Ruu TNI test",
+//     tweet_url: "https://x.com/happywithV2/status/1903424019937792172",
+//     username: "impact_pioneer",
+//   },
+// ];
+
+export const DUMMY_TWEET_TOPICS: TweetTopic[] = tweetTopicsData;
 
 // Dummy Sentiment Data - Enhanced for Social Business Context
 export const DUMMY_SENTIMENT: Sentiment = {
@@ -1345,9 +1065,12 @@ export class OfflineDataProvider {
     return DUMMY_TOPICS.filter((t) => t.projectId === projectId);
   }
 
-  static getTweetsByProject(projectId: string): TweetTopic[] {
-    return DUMMY_TWEET_TOPICS.slice(0, 15);
-  }
+static getTweetsByProject(projectId: string): TweetTopic[] {
+  // only return those whose projectId matches
+  return DUMMY_TWEET_TOPICS.filter(
+    tweet => tweet.projectId.toString() === projectId
+  ).slice(0,4818);
+}
 
   static getSentimentByProject(projectId: string): Sentiment {
     // Create a copy with the sentiment array populated

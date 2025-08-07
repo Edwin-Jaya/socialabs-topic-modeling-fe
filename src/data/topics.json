@@ -1,0 +1,434 @@
+[
+  {
+    "context": "Topik ini tentang bagaimana diabetes mellitus meningkatkan risiko sakit akibat tingginya kadar gula darah dan peran insulin dalam menjaga tingkat gula tetap sehat saat makan.",
+    "keyword": "Penyakit Diabetes",
+    "projectId": "dummy-project-001",
+    "topicId": 0,
+    "words": [
+      "diabetes",
+      "gula",
+      "darah",
+      "sakit",
+      "sehat",
+      "risiko",
+      "makan",
+      "mellitus",
+      "insulin",
+      "tingkat"
+    ]
+  },
+  {
+    "context": "Topik ini tentang pentingnya mengatur pola makan untuk mencegah diabetes mellitus dengan cara menurunkan kadar gula darah yang tinggi dan mengelola insulin agar tetap sehat meski ada risiko sakit.",
+    "keyword": "Penyakit Diabetes",
+    "projectId": "dummy-project-001",
+    "topicId": 1,
+    "words": [
+      "diabetes",
+      "gula",
+      "sakit",
+      "darah",
+      "sehat",
+      "risiko",
+      "makan",
+      "tinggi",
+      "insulin",
+      "mellitus"
+    ]
+  },
+  {
+    "context": "Topik ini tentang rekam momen alami pour topping manis di toko kue Ny Liem, merek lokal nyc ling, yang ditatap sepenuh jiwa bak dream coming true.",
+    "keyword": "Toko dan Bahan Kue Ny.Liem",
+    "projectId": "dummy-project-002",
+    "topicId": 0,
+    "words": [
+      "rekam",
+      "alami",
+      "pour",
+      "nyc",
+      "ling",
+      "merek",
+      "manis",
+      "tatap",
+      "sepenuh",
+      "dream"
+    ]
+  },
+  {
+    "context": "Topik ini tentang gemasnya karya kue Ny Liem, ekspresi hidup dream chan yang mengiringi work dengan musik manis, bikin suka dan selamat menikmati.",
+    "keyword": "Toko dan Bahan Kue Ny.Liem",
+    "projectId": "dummy-project-002",
+    "topicId": 1,
+    "words": [
+      "gemas",
+      "karya",
+      "dream",
+      "chan",
+      "ekspresi",
+      "hidup",
+      "work",
+      "selamat",
+      "musik",
+      "suka"
+    ]
+  },
+  {
+    "context": "Topik ini tentang kue Ny Liem yang punya vois manis, tampil tanpa dramatis hamas, jadi mode langkah tepat para wanita, bantu cari waktu me-time, kasih sensasi lycan.",
+    "keyword": "Toko dan Bahan Kue Ny.Liem",
+    "projectId": "dummy-project-002",
+    "topicId": 2,
+    "words": [
+      "vois",
+      "hamas",
+      "tampil",
+      "langkah",
+      "mode",
+      "bantu",
+      "lycan",
+      "waktu",
+      "kasih",
+      "wanita"
+    ]
+  },
+  {
+    "context": "Topik ini tentang game Euro Truck Simulator yang menghadirkan truk spesial bork dan tanker Corsa dalam project baru, sehingga penggemar dapat mengunduh konten menarik dan merasakan sensasi menjadi sopir virtual.",
+    "keyword": "tren euro truck simulator 2",
+    "projectId": "dummy-project-003",
+    "topicId": 0,
+    "words": [
+      "bork",
+      "sopir",
+      "game",
+      "tanker",
+      "project",
+      "spesial",
+      "hadir",
+      "unduh",
+      "corsa",
+      "truk"
+    ]
+  },
+  {
+    "context": "Topik ini tentang mod CEST dan Metropolix di Euro Truck Simulator yang menghadirkan trailer minyak spesial dengan detail tinggi, menciptakan pengalaman berkendara alami yang banyak diunggah dan disaksikan di YouTube.",
+    "keyword": "tren euro truck simulator 2",
+    "projectId": "dummy-project-003",
+    "topicId": 1,
+    "words": [
+      "cest",
+      "metropolix",
+      "kendara",
+      "alami",
+      "youtube",
+      "spesial",
+      "tinggi",
+      "unggah",
+      "minyak",
+      "saksi"
+    ]
+  },
+  {
+    "context": "Topik ini tentang episode terbaru Euro Truck Simulator yang memperkenalkan wilayah Actros dan truk bork, di mana pemain bergabung untuk merasakan kendara alami yang sungguh menantang, bahkan menghadapi celaka di tengah perjalanan waktu.",
+    "keyword": "tren euro truck simulator 2",
+    "projectId": "dummy-project-003",
+    "topicId": 2,
+    "words": [
+      "episode",
+      "wilayah",
+      "actros",
+      "gabung",
+      "sungguh",
+      "bork",
+      "celaka",
+      "kendara",
+      "alami",
+      "waktu"
+    ]
+  },
+  {
+    "context": "Topik ini tentang pengembangan mod Metropolix di Euro Truck Simulator yang melibatkan usaha penuh inovasi, menambahkan bus, trailer farming, dan manajemen waktu luang yang mudah dikendalikan dengan mouse, disaksikan banyak pemain.",
+    "keyword": "tren euro truck simulator 2",
+    "projectId": "dummy-project-003",
+    "topicId": 3,
+    "words": [
+      "usaha",
+      "mouse",
+      "metropolix",
+      "penuh",
+      "bus",
+      "saksi",
+      "luang",
+      "farming",
+      "trailer",
+      "man"
+    ]
+  },
+  {
+    "context": "Topik ini tentang semangat komunitas Euro Truck Simulator dalam memilih truk TGX sebagai setir andalan, membahas harga mod tani, membagikan asa sukses, dan berbagi pengalaman di YouTube.",
+    "keyword": "tren euro truck simulator 2",
+    "projectId": "dummy-project-003",
+    "topicId": 4,
+    "words": [
+      "asa",
+      "harga",
+      "semangat",
+      "setir",
+      "tani",
+      "youtube",
+      "pilih",
+      "game",
+      "euro",
+      "tgx"
+    ]
+  },
+  {
+    "context": "Topik ini tentang game Euro Truck Simulator yang menghadirkan truk spesial bork dan tanker Corsa dalam project baru, sehingga penggemar dapat mengunduh konten menarik dan merasakan sensasi menjadi sopir virtual.",
+    "keyword": "truk spesial OR tanker Corsa OR Euro Truck Simulator",
+    "projectId": "dummy-project-004",
+    "topicId": 0,
+    "words": [
+      "bork",
+      "sopir",
+      "game",
+      "tanker",
+      "project",
+      "spesial",
+      "hadir",
+      "unduh",
+      "corsa",
+      "truk"
+    ]
+  },
+  {
+    "context": "Topik ini tentang mod CEST dan Metropolix di Euro Truck Simulator yang menghadirkan trailer minyak spesial dengan detail tinggi, menciptakan pengalaman berkendara alami yang banyak diunggah dan disaksikan di YouTube.",
+    "keyword": "mod CEST OR mod Metropolix",
+    "projectId": "dummy-project-004",
+    "topicId": 1,
+    "words": [
+      "cest",
+      "metropolix",
+      "kendara",
+      "alami",
+      "youtube",
+      "spesial",
+      "tinggi",
+      "unggah",
+      "minyak",
+      "saksi"
+    ]
+  },
+  {
+    "context": "Topik ini tentang episode terbaru Euro Truck Simulator yang memperkenalkan wilayah Actros dan truk bork, di mana pemain bergabung untuk merasakan kendara alami yang sungguh menantang, bahkan menghadapi celaka di tengah perjalanan waktu.",
+    "keyword": "Wilayah Actros OR truk bork",
+    "projectId": "dummy-project-004",
+    "topicId": 2,
+    "words": [
+      "episode",
+      "wilayah",
+      "actros",
+      "gabung",
+      "sungguh",
+      "bork",
+      "celaka",
+      "kendara",
+      "alami",
+      "waktu"
+    ]
+  },
+  {
+    "context": "Topik ini tentang pengembangan mod Metropolix di Euro Truck Simulator yang melibatkan usaha penuh inovasi, menambahkan bus, trailer farming, dan manajemen waktu luang yang mudah dikendalikan dengan mouse, disaksikan banyak pemain.",
+    "keyword": "mod Metropolix OR inovasi OR farming",
+    "projectId": "dummy-project-004",
+    "topicId": 3,
+    "words": [
+      "usaha",
+      "mouse",
+      "metropolix",
+      "penuh",
+      "bus",
+      "saksi",
+      "luang",
+      "farming",
+      "trailer",
+      "man"
+    ]
+  },
+  {
+    "context": "Topik ini tentang semangat komunitas Euro Truck Simulator dalam memilih truk TGX sebagai setir andalan, membahas harga mod tani, membagikan asa sukses, dan berbagi pengalaman di YouTube.",
+    "keyword": "truk TGX OR mod tani OR sukses",
+    "projectId": "dummy-project-004",
+    "topicId": 4,
+    "words": [
+      "asa",
+      "harga",
+      "semangat",
+      "setir",
+      "tani",
+      "youtube",
+      "pilih",
+      "game",
+      "euro",
+      "tgx"
+    ]
+  },
+  {
+    "context": "Topik ini tentang bolu ketan hitam keju lumer yang lezat, dijual mulai dari Rp10.000 per sentimeter dan siap kirim ke seluruh Indonesia.",
+    "keyword": "bolu ketan hitam OR keju lumer",
+    "projectId": "dummy-project-005",
+    "topicId": 0,
+    "words": [
+      "bolu",
+      "ketan",
+      "hitam",
+      "keju",
+      "lumer",
+      "rupiah",
+      "kirim",
+      "jual",
+      "lezat",
+      "sentimeter"
+    ]
+  },
+  {
+    "context": "Topik ini tentang resep ayam bumbu lezat dengan telur dan nasi hitam, bahan sederhana yang bisa dicoba untuk makan praktis sehari-hari.",
+    "keyword": "resep ayam bumbu OR telur OR nasi hitam",
+    "projectId": "dummy-project-005",
+    "topicId": 1,
+    "words": [
+      "ayam",
+      "bumbu",
+      "lezat",
+      "telur",
+      "makan",
+      "bahan",
+      "coba",
+      "nasi",
+      "hitam",
+      "resep"
+    ]
+  },
+  {
+    "context": "Topik ini tentang perbandingan rasa kopi Tuku dan Fore Coffee yang nikmat dan manis dengan tambahan susu, sekaligus membahas harga dalam rupiah bagi yang ingin coba minum.",
+    "keyword": "kopi Tuku OR kopi Fore Coffee",
+    "projectId": "dummy-project-006",
+    "topicId": 0,
+    "words": [
+      "kopi",
+      "coffee",
+      "fore",
+      "nikmat",
+      "minum",
+      "manis",
+      "susu",
+      "harga",
+      "rupiah",
+      "coba"
+    ]
+  },
+  {
+    "context": "Topik ini tentang perbandingan harga kopi Tuku dan Fore Coffee dalam rupiah, serta pengalaman coba minum kopi manis yang nikmat dengan sentuhan susu.",
+    "keyword": "kopi Tuku OR kopi Fore Coffee",
+    "projectId": "dummy-project-006",
+    "topicId": 1,
+    "words": [
+      "kopi",
+      "coffee",
+      "fore",
+      "nikmat",
+      "minum",
+      "manis",
+      "susu",
+      "harga",
+      "rupiah",
+      "coba"
+    ]
+  },
+  {
+    "context": "Topik ini tentang rekomendasi untuk coba minum kopi Tuku versus Fore Coffee yang nikmat, manis, dan creamy berkat susu, dengan perbandingan harga rupiah yang terjangkau.",
+    "keyword": "kopi Tuku OR kopi Fore Coffee",
+    "projectId": "dummy-project-006",
+    "topicId": 2,
+    "words": [
+      "kopi",
+      "coffee",
+      "fore",
+      "nikmat",
+      "minum",
+      "manis",
+      "susu",
+      "harga",
+      "rupiah",
+      "coba"
+    ]
+  },
+  {
+    "context": "Topik ini berfokus pada masyarakat Indonesia yang menyadari bahwa TNI memiliki peran penting dalam menjaga stabilitas nasional dan menjadi komunitas yang lebih baik bagi masyarakat sipil",
+    "keyword": "ruu tni",
+    "projectId": "dummy-project-007",
+    "topicId": 0,
+    "words": [
+      "tni",
+      "sipil",
+      "indonesia",
+      "jadi",
+      "komunitas",
+      "lebih",
+      "masyarakat",
+      "penting",
+      "bagi",
+      "hadap"
+    ]
+  },
+  {
+    "context": "Topik ini berfokus pada banyaknya orang yang merasa bahwa TNI saat ini lebih ikut dalam masyarakat dan dianggap sangat baik dalam menjalankan tugasnya.",
+    "keyword": "ruu tni",
+    "projectId": "dummy-project-007",
+    "topicId": 1,
+    "words": [
+      "orang",
+      "sebut",
+      "sangat",
+      "tni",
+      "lebih",
+      "ikut",
+      "mungkin",
+      "rasa",
+      "semua",
+      "baik"
+    ]
+  },
+  {
+    "context": "Topik ini berfokus pada keaktifan TNI dalam komunitas sipil, sehingga banyak orang yang menyebut mereka sebagai bagian penting dari Indonesia.",
+    "keyword": "ruu tni",
+    "projectId": "dummy-project-007",
+    "topicId": 2,
+    "words": [
+      "tni",
+      "lebih",
+      "sebut",
+      "ikut",
+      "jadi",
+      "bagi",
+      "indonesia",
+      "komunitas",
+      "orang",
+      "sipil"
+    ]
+  },
+  {
+    "context": "Topik ini berfokus pada revisi RUU TNI menjadi topik penting bagi masyarakat Indonesia, karena menyangkut prinsip demokrasi dan stabilitas nasional yang dihadapi dalam beberapa tahun terakhir.",
+    "keyword": "ruu tni",
+    "projectId": "dummy-project-007",
+    "topicId": 3,
+    "words": [
+      "tni",
+      "sipil",
+      "militer",
+      "revisi",
+      "hadap",
+      "nasional",
+      "prinsip",
+      "demokrasi",
+      "indonesia",
+      "tahun"
+    ]
+  }
+]
